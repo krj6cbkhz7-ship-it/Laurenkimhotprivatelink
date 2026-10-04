@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lauren Kim Ripley HOT Private Link</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .box {
+      width: 100%;
+      max-width: 420px;
+      padding: 35px 25px;
+      border: 1px solid #333;
+      border-radius: 15px;
+      background: #111;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 30px;
+      font-size: 17px;
+    }
+    input {
+      width: 100%;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #444;
+      background: #222;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #fff;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 18px;
+      min-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>LAUREN KIM RIPLEY HOT PRIVATE LINK</h1>
+    <div class="subtitle">The most discreet private link</div>
+
+    <input id="code" type="text" placeholder="Enter your membership activation code">
+    <button onclick="unlockLink()">UNLOCK LINK</button>
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function unlockLink() {
+      const enteredCode = document.getElementById("code").value.trim();
+      const correctCode = "PRIVATE123";
+
+      if (enteredCode === correctCode) {
+        document.getElementById("message").textContent = "Access granted 🔓";
+
+        // Replace the URL below with your actual destination.
+        setTimeout(function () {
+          window.location.href = "https://example.com";
+        }, 1000);
+      } else {
+        document.getElementById("message").textContent = "Invalid activation code ❌";
+      }
+    }
+  </script>
+</body>
+</html>
